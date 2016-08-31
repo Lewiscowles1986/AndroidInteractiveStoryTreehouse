@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StoryActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StoryImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/page0"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyTextView"
+        android:layout_below="@+id/StoryImageView"
+        android:layout_alignLeft="@+id/StoryImageView"
+        android:layout_alignStart="@+id/StoryImageView"
+        android:minLines="10"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:lineSpacingMultiplier="1.6"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CHOOSE_OPTION_BTN_TEXT"
+        android:id="@+id/btnChoice"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/storyTextView"
+        android:layout_alignStart="@+id/storyTextView" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choiceList"
+        android:layout_above="@+id/btnChoice"
+        android:layout_alignLeft="@+id/btnChoice"
+        android:layout_alignStart="@+id/btnChoice"
+        android:visibility="invisible" />
+
+</RelativeLayout>
